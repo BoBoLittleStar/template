@@ -22,9 +22,4 @@ public class AppConfigurer implements WebSocketConfigurer {
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 		registry.addHandler(handler, "socket").setAllowedOrigins("*");
 	}
-
-	@Bean
-	public Map<String, JsonWebSocketHandler> createHandler() {
-		return new HashMap<>();
-	}
 }
